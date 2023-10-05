@@ -1,0 +1,56 @@
+<html>
+<head>
+ <script type="text/javascript">
+ function okno_zamknij_siejka()
+ {
+ window.close()
+ }
+ </script>
+</head>
+<body>
+ <form>
+ <textarea name="zadanie12" cols="100" rows="40" readonly>
+
+ <!DOCTYPE html>
+ <head>
+ <meta charset="utf-8">
+  <script>
+  function okno_zamknij()
+ {
+ window.close()
+ }
+  </script>
+ </head>
+<body>
+<div style="color:green;font-size:51px;">
+ <script language="JavaScript">
+var D1_grot=prompt("Podaj wcześniejszy dzien stycznia D1_grot=","");
+var G1_grot=prompt("Podaj wcześniejszą godzinę G1_grot=","");
+var D2_grot=prompt("Podaj inny poźniejszy dzien stycznia D2_grot=","");
+var G2_grot=prompt("Podaj późniejszą godzinę G2_grot=","");
+ var a=parseInt(D1_grot);
+ var b=parseInt(D2_grot);
+ var c=parseInt(G1_grot);
+ var d=parseInt(G2_grot);
+ var godz;
+ godz=(d-c)*3600;
+ var wynik;
+ wynik=(b-a)*86400;
+ wynik= wynik+godz;
+ document.write("Ilość sekund = "+wynik+"<br>");
+ 
+ 
+ 
+ </script>
+ 
+  <input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+</div>
+</body>
+</html>
+ </textarea>
+</form>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_siejka()"/>
+<script type="text/javascript">
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+ <head>
+ <script type="text/javascript">
+ function show_prompt()
+ {
+ var name=prompt("Napisz imię","Imię Nazwisko");
+ if (name!=null && name!="")
+ {
+ document.write("Witaj " + name + "! jak się masz?");
+ }
+ }
+ function okno_zamknij()
+ {
+ window.close()
+ }
+ </script>
+</head>
+<body>
+ <input type="button" onclick="show_prompt()" value="Pokaż prompt box" />
+  <input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+  <script>
+document.write("Zastosowanie".fontsize(4).bold()+"<br>");
+document.write("Jest używany, jeśli chcemy zapytać użytkownika o weryfikacje, lub akceptację jakichś danych. Użytkownik musi nacisnąć „OK.” w celu akceptacji bądź „Cancel” w celu odrzucenia. Jeżeli zostanie wybrane „OK.” metoda zwraca true w przeciwnym wypadku false. ".fontsize(3)+"<br>");
+  </script>
+
+ </body>
+</html> 

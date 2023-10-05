@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+ <head>
+	<meta charset="utf-8">
+		<script>
+ 		  function okno_zamknij()
+ 		 {
+ 		window.close()
+	 	 }
+ 		</script>
+ </head>
+ <body>
+		<div style="color:navy;font-size:51px;">
+ 				<script language="JavaScript">
+		var a_grot=prompt("Podaj liczbę A=","");
+		var b_grot=prompt("Podaj liczbę B=","");
+		 var a_gro=parseFloat(a_grot);
+		 var b_gro=parseFloat(b_grot);
+		 		
+		var wynik = Math.pow(a_grot,3);	
+		var wynik1 = Math.pow(b_grot,3);	
+		var wynik2 = 3*((a_grot*a_grot)*b_grot);
+		var wynik3 = 3*(a_grot*(b_grot*b_grot));
+		
+		var razem = wynik+wynik1+wynik2+wynik3;
+			
+ document.write("Podane liczby to: A=" + a_gro + ",  B=" + b_gro + "<br>");
+ document.write("(" + a_gro + " + " + b_gro + ")^3 = " + a_gro + "^3 + 3*((" + a_gro + ")^2)*(" + b_gro + ") + 3*(" + a_gro + ")*((" + b_gro + ")^2) + " + b_gro + "^3 = " + wynik + " + " + wynik2 + " + " + wynik3 + " + " + wynik1 + " = " + razem );
+
+
+ 				</script>
+				<br>
+ 		 <input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+		</div>
+ </body>
+</html>
